@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 페이지</title>
+</head>
+<h3><div>
+    <img src="../images/it_icon.png" width="10" alt="표시용"/>        
+    기본정보</div>
+</h3>
+<body>
+    <table border="1">
+    <tbody>
+        <tr>
+         <th>
+        <label for="username">이름</label>
+        </th>
+         <td>
+        <input type="text" name="username" id="username">
+        </td>
+
+        <tr>  
+        <th>
+        <label for="userid">아이디</label>
+        </th>
+        <td>
+        <input type="text" name="userid" id="userid">
+        <img src="../images/it_icon.png" width="10" alt="표시용"/>
+        <input type="button" value="아이디 중복확인"></button>
+        </td>
+        
+        <tr>  
+            <th>
+            <label for="pass">비밀번호</label>
+            </th>
+            <td>
+            <input type="text" name="pass" id="pass">
+            <div>
+                
+                <p>
+                    <img src="../images/it_icon.png" width="10" alt="표시용"/> 
+                    6 ~ 16자 까지 영문자(대소문자), 숫자 및 특수문자 사용 가능합니다.
+                    3자리 연속 또는 같은 문자, 아이디는 사용하실 수 없습니다.
+                </p>
+            </div>
+        </td>
+
+        <tr>  
+            <th>
+            <label for="passcon">비밀번호 확인</label>
+            </th>
+            <td>
+            <input type="text" name="passcon" id="passcon">
+        </td>
+
+        <tr>  
+            <th>
+            <label for="passcon">이메일</label>
+            </th>
+            <td>
+                <input type="text" name="email1" id="email1">
+                @
+                <input type="text" name="email2" id="email2">
+                <select name="domain" id="domain">
+                    <option value="non">메일주소선택</option>
+                    <option value="non">네이버</option>
+                    <option value="non">다음</option>
+                    <option value="non">카카오</option>
+                </select>
+                <div>
+                <input type="text" name ="email3" id="eamil3">
+                <input type="button" value ="인증확인">
+            </div>
+        </td>
+
+
+        </div>
+        </tr>  
+        <tr>  
+            <th>
+            <label for="pass">우편번호</label>
+            </th>
+            <td>
+            <input type="text" name="dnvus" id="dnvus">
+            <img src="../images/it_icon.png" width="10" alt="표시용"/>
+            <input type="button" value="주소검색">
+            </td>
+
+        <tr>  
+                <th>
+                <label for="pass">주소</label>
+                </th>
+
+         <td>
+            <div>
+                <input type="text" name="addr1" id="addr" style="width:600px;">
+            </div>
+            <div>
+                <input type="text" name="addr2" id="addr" style="width:200px;">
+            </div>
+        </td>
+
+        <tr>  
+            <th>
+            <label for="pass">정보수신 여부</label>
+            </th>
+
+            <td>
+            서비스 및 이벤트 소식을 
+            <input type="checkbox" value="email" id="info">
+            Email로 수신하겠습니다.
+            <input type="checkbox" value="submit" id="send">          
+            SMS로 수신하겠습니다.
+            </td>
+    
+
+  
+        
+ 
+        
+        </table>
+    </form>
+
+    
+
+
+    <div>
+        <a href="../../index.html" target="_self">되돌아가시겠습니까?</a></h3>
+</div>
+</body>
+</html>
