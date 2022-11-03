@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입 페이지</title>
 </head>
-<h3><div>
+
+<h6>
+    http://127.0.0.1:5500/docs/htmls/forms_basic.html?user_name=eunsol97&password=sol97&password_check=sol97&email=solllll1230&e_address=gmail.com&
+    email=choose&phone=010&phone_1=7530&phone_2=2057&home_n=031&home_1=&home_2=&zip_code=17330&address=%EA%B2%BD%EA%B8%B0&address_2=%EC%9D%B4%EC%B2%9C&event_email=event_email
+  </h6>
+  <h3><div>
     <img src="../images/it_icon.png" width="10" alt="표시용"/>        
     기본정보</div>
 </h3>
@@ -18,10 +23,10 @@
             method="post">
         <tr>
          <th>
-        <label for="username">이름</label>
+        <label for="name">이름</label>
         </th>
          <td>
-        <input type="text" name="username" id="username">
+        <input type="text" name="username" id="username_id">
         </td>
         </tr>
     </form>
@@ -29,10 +34,10 @@
         
         <tr>  
         <th>
-        <label for="userid">아이디</label>
+        <label for="user">아이디</label>
         </th>
         <td>
-        <input type="text" name="userid" id="userid">
+        <input type="text" name="user" id="user_id">
         <img src="../images/it_icon.png" width="10" alt="표시용"/>
         <input type="button" value="아이디 중복확인"></button>
         <p>
@@ -46,7 +51,7 @@
             <label for="pass">비밀번호</label>
             </th>
             <td>
-            <input type="text" name="pass" id="pass">
+            <input type="text" name="pass" id="pass_id">
             <div>
                 
                 <p>
@@ -61,7 +66,7 @@
             <label for="passcon">비밀번호 확인</label>
             </th>
             <td>
-            <input type="text" name="passcon" id="passcon">
+            <input type="text" name="passcon" id="passcon_id">
         </td>
 
         <tr>  
@@ -69,9 +74,9 @@
             <label for="email">이메일</label>
             </th>
             <td>
-                <input type="text" name="email1" id="email1">
+                <input type="text" name="email1" id="email1_id">
                 @
-                <input type="text" name="email2" id="email2">
+                <input type="text" name="email2" id="email2_id">
                 <select name="domain" id="domain">
                     <option value="non">메일주소선택</option>
                     <option value="non">네이버</option>
@@ -85,7 +90,7 @@
             </th>
             <td>
                 
-                휴대전화<select name="number1" id="number1"> 
+                휴대전화<select name="number1" id="number1_id"> 
                     <option value="null">선택</option>
                     <option value="n010">010</option>
                     <option value="n011">011</option>
@@ -93,17 +98,17 @@
                     <option value="n019">019</option>  
                 </select>
                  -                         
-                    <input type="text" name="number2"  id="number2" style="width:50px;"> - <input type="text" name="number3" id="number3" style="width:50px;">
+                    <input type="text" name="number2"  id="number2_id" style="width:50px;"> - <input type="text" name="number3" id="number3_id" style="width:50px;">
                 
             <div>
-                일반전화<select name="phone1" id="number2"> 
+                일반전화<select name="phone1" id="phone1_id"> 
                     <option value="n02">02</option>
                     <option value="n031">031</option>
                     <option value="n032">032</option>
                     <option value="n033">033</option> 
                 </select>
                 -
-                <input type="text" name="phone2"  id="phone2" style="width:50px;"> - <input type="text" name="phone3" id="phone3" style="width:50px;">
+                <input type="text" name="phone2"  id="phone2_id" style="width:50px;"> - <input type="text" name="phone3" id="phone3_id" style="width:50px;">
             </div>
             <div>
                 <p>
@@ -119,39 +124,40 @@
         </tr>  
         <tr>  
             <th>
-            <label for="pass">우편번호</label>
+            <label for="post">우편번호</label>
             </th>
             <td>
-            <input type="text" name="dnvus" id="dnvus">
+            <input type="text" name="post" id="post_id">
             <img src="../images/it_icon.png" width="10" alt="표시용"/>
             <input type="button" value="주소검색">
             </td>
 
         <tr>  
                 <th>
-                <label for="address">주소</label>
+                <label for="add">주소</label>
                 </th>
 
          <td>
             <div>
-                <input type="text" name="addr1" id="addr1" style="width:600px;">
+                <input type="text" name="add1" id="add1_id" style="width:600px;">
             </div>
             <div>
-                <input type="text" name="addr2" id="addr2" style="width:200px;">
+                <input type="text" name="add2" id="add2_id" style="width:200px;">
             </div>
         </td>
 
         <tr>  
             <th>
-            <label for="information">정보수신 여부</label>
+            <label for="info">정보수신 여부</label>
             </th>
 
             <td>
             서비스 및 이벤트 소식을 
-            <input type="checkbox" value="email" id="info">
-            Email로 수신하겠습니다.
-            <input type="checkbox" value="sns" id="send">          
-            SMS로 수신하겠습니다.
+            <input type="checkbox" value="email" id="info_id">
+            <label for="email_id">Email로 수신하겠습니다.</label>
+            <input type="checkbox" value="send" id="send_id"> 
+            <label for="sms_id">SMS로 수신하겠습니다.</label>         
+            
             </td>
     
 
