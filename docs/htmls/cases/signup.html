@@ -11,8 +11,11 @@
     기본정보</div>
 </h3>
 <body>
+    <form action="../forms_basic.html" method="get">
     <table border="1">
     <tbody>
+        <form name= "name" accept-charset="utf-8"
+            method="post">
         <tr>
          <th>
         <label for="username">이름</label>
@@ -20,7 +23,10 @@
          <td>
         <input type="text" name="username" id="username">
         </td>
-
+        </tr>
+    </form>
+        
+        
         <tr>  
         <th>
         <label for="userid">아이디</label>
@@ -29,7 +35,11 @@
         <input type="text" name="userid" id="userid">
         <img src="../images/it_icon.png" width="10" alt="표시용"/>
         <input type="button" value="아이디 중복확인"></button>
-        </td>
+        <p>
+            <img src="../images/it_icon.png" width="10" alt="표시용"/> 
+            6 ~ 16자까지 영문자(소문자),숫자 사용 가능합니다.
+        </div>
+                </td>
         
         <tr>  
             <th>
@@ -41,10 +51,9 @@
                 
                 <p>
                     <img src="../images/it_icon.png" width="10" alt="표시용"/> 
-                    6 ~ 16자 까지 영문자(대소문자), 숫자 및 특수문자 사용 가능합니다.
-                    3자리 연속 또는 같은 문자, 아이디는 사용하실 수 없습니다.
-                </p>
-            </div>
+                    6 ~ 16자 까지 영문자(대소문자), 숫자 및 특수문자 사용 가능합니다.<br>
+                    3자리 연속 또는 같은 문자, 아이디는 사용하실 수 없습니다.    
+                </div>
         </td>
 
         <tr>  
@@ -57,7 +66,7 @@
 
         <tr>  
             <th>
-            <label for="passcon">이메일</label>
+            <label for="email">이메일</label>
             </th>
             <td>
                 <input type="text" name="email1" id="email1">
@@ -68,14 +77,44 @@
                     <option value="non">네이버</option>
                     <option value="non">다음</option>
                     <option value="non">카카오</option>
-                </select>
-                <div>
-                <input type="text" name ="email3" id="eamil3">
-                <input type="button" value ="인증확인">
-            </div>
+                </select>      
         </td>
+        <tr>
+        <th>
+            <label for="tell">연락처</label>
+            </th>
+            <td>
+                
+                휴대전화<select name="number1" id="number1"> 
+                    <option value="null">선택</option>
+                    <option value="n010">010</option>
+                    <option value="n011">011</option>
+                    <option value="n016">016</option>
+                    <option value="n019">019</option>  
+                </select>
+                 -                         
+                    <input type="text" name="number2"  id="number2" style="width:50px;"> - <input type="text" name="number3" id="number3" style="width:50px;">
+                
+            <div>
+                일반전화<select name="phone1" id="number2"> 
+                    <option value="n02">02</option>
+                    <option value="n031">031</option>
+                    <option value="n032">032</option>
+                    <option value="n033">033</option> 
+                </select>
+                -
+                <input type="text" name="phone2"  id="phone2" style="width:50px;"> - <input type="text" name="phone3" id="phone3" style="width:50px;">
+            </div>
+            <div>
+                <p>
+                <img src="../images/it_icon.png" width="10" alt="표시용"/>
+                연락처는 둘 중 하나만 입력해도 됩니다.
+                </p>
+            </div>
+            </td>
 
 
+        </tr>
         </div>
         </tr>  
         <tr>  
@@ -90,28 +129,28 @@
 
         <tr>  
                 <th>
-                <label for="pass">주소</label>
+                <label for="address">주소</label>
                 </th>
 
          <td>
             <div>
-                <input type="text" name="addr1" id="addr" style="width:600px;">
+                <input type="text" name="addr1" id="addr1" style="width:600px;">
             </div>
             <div>
-                <input type="text" name="addr2" id="addr" style="width:200px;">
+                <input type="text" name="addr2" id="addr2" style="width:200px;">
             </div>
         </td>
 
         <tr>  
             <th>
-            <label for="pass">정보수신 여부</label>
+            <label for="information">정보수신 여부</label>
             </th>
 
             <td>
             서비스 및 이벤트 소식을 
             <input type="checkbox" value="email" id="info">
             Email로 수신하겠습니다.
-            <input type="checkbox" value="submit" id="send">          
+            <input type="checkbox" value="sns" id="send">          
             SMS로 수신하겠습니다.
             </td>
     
@@ -127,7 +166,12 @@
 
 
     <div>
-        <a href="../../index.html" target="_self">되돌아가시겠습니까?</a></h3>
-</div>
+       
+        <button onclick="window.open('../../index.html')">되돌아가기</button >
+            <div>
+                <button type="submit">Send</button> 
+              </div>
+    </div>
 </body>
+
 </html>
