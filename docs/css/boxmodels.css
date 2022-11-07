@@ -1,0 +1,15 @@
+.dotted{
+    border-style: dotted;
+}
+
+.double{
+    border-style:double;
+}
+
+.solid{
+    border-style:solid;
+}
+
+.mixed{
+    border-style:dotted double solid dashed;
+}

@@ -16,3 +16,17 @@
 .back_color_blue{
     background-color: blue;
 }
+.back_color_yellow_parent > *{
+    background-color: yellow;
+}
+
+#back_color_aqua {
+    background-color: aqua;
+}
+
+h3 {
+    color:brown;
+}
+.same_style_class {
+    color:skyblue;
+}
