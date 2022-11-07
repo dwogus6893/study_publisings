@@ -1,0 +1,18 @@
+* {
+    margin-bottom: 7px;
+}
+
+.Red{
+    border-style:solid;
+    border-color:rgba(255,0,0,1),rgba(255,0,0,0.75),rgba(255,0,0,0.5),rgba(255,0,0,0.25);
+}
+
+.Green{
+    border-style:solid;
+    border-color:rgba(0, 100, 0,1)rgba(0, 100, 0,0.75)rgba(0, 100, 0,0.5)rgba(0, 100, 0,0.25);
+}
+
+.Blue{
+    border-style: dotted;
+    border-color:rgba(0,0,255,1) rgba(0,0,255,0.75) rgba(0,0,255,0.5) rgba(0,0,255,0.25);
+}
