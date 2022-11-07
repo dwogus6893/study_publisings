@@ -1,0 +1,37 @@
+html {
+    font-size: 10px;
+    font-family: "Nanum Pen Script", Arial, Helvetica, sans-serif";
+  }
+  
+  h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  
+  p, li {
+    font-size: 16px;
+    }
+    
+ html {
+    background-color: cornflowerblue;
+  }
+  
+  body {
+    width: 600px;
+    margin: 0 auto;/* auto사용시 정중앙 위치 */
+    background-color: darkorange;
+    padding: 0px 20px 20px 20px; /*위 우측 아래 좌측*/
+    border: 5px solid black; /*두깨*/
+  }
+  
+  h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: dodgerblue;
+    text-shadow: 3px 3px 3px black;
+  }
+  
+  img {
+    display:block;
+    margin: 0 auto;
+  }
