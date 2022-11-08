@@ -1,0 +1,9 @@
+* {
+    border: 1px dotted gray;
+}
+
+.outline{
+    border: 2px solid black;
+    margin: 0 10% 0px 10%;
+    text-align: center;
+}
