@@ -1,0 +1,21 @@
+
+ul{
+    list-style-type: none;
+    display: inline-block;
+    background-color: yellow;
+    padding: 10px;
+}
+li{
+    display:inline-block;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.div {
+    display: inline;
+  }
+  
+  .main {
+    font-size: 30px;
+    font-weight: 900;
+  }
