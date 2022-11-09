@@ -1,0 +1,24 @@
+.border {
+width: 600px;
+}
+.title *{
+    vertical-align: middle;
+   }
+.sumbit {
+
+}
+
+
+.title2{
+    background: tomato;
+    justify-content:center;
+    color:white; 
+}
+.end_title2{
+    background:tomato;
+    text-align:center;
+    color:white;
+}
+.submit{
+    flex-grow:5;
+}
