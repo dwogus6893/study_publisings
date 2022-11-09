@@ -1,0 +1,33 @@
+
+
+.ul {
+    list-style-type: none;
+    display: inline-block;
+    background-color: yellow;
+    padding: 10px;
+  }
+  
+  .li {
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: 600;
+  }
+   .menu-outline {
+    background-color: yellow;
+    text-align:center;
+  }
+  
+  
+  .main {
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+  .ul-flat {
+list-style-type: none;
+  margin:10px auto 10px auto;
+  }
+
+  .ul-flat * {
+    display: inline-block;
+    }
