@@ -5,6 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <!-- 
 M : Margin
@@ -24,8 +26,8 @@ col-4는 12칸중 4칸 차지한다는 말
     <div class="container">
     <div class="row">
     
-            <!-- 맨위 제목 -->
-    <div class="col-12 col-md-6">
+    <!-- 맨위 제목 -->
+    <div class="col-12 col-md-6 ">
     <div class="fs-2 fw-bold mt-4">Vertically centered hero sign-up form</div>
     <div class="fs-6">
         Below is an example form built entirely with Bootstrap's form controls.
@@ -34,16 +36,15 @@ col-4는 12칸중 4칸 차지한다는 말
     </div>
 
     <div class="col-12 col-md-6">
-    <form action="./index/html" method="get">
-    <div class="row mt -4"
-        <!-- 이메일 입력 -->
-    <div class="form-float mb-3">
+    <!-- form 묶음 -->
+    <form action="./index.html" method="get">
+    <!-- 1차묶음 -->
+    <div class="mb-1 bg-secondary bg-opacity-10 row mt-4">
+    <!-- 이메일 입력 -->
+    <div class="mt-4">
         <input type="email" class="form-control" id="floatingInput" placeholder="Email address">
         <label for="floatingInput"></label>
-    </div>
-
     <!-- 비밀번호 입력 -->
-    <div class="form-float mb-3">
         <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
         <label for="floatingPassword"></label>
     </div>
@@ -54,13 +55,21 @@ col-4는 12칸중 4칸 차지한다는 말
         <input type="checkbox" value="remember-me">Remember me
     </label>
     </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sing up</button>
-    <hr class="my-4">
-    <small class="text">By clicking Sign up, you agree to the terms of use.</small>
+
+    <!-- sign up버튼-->
+    <div class="mb-4">
+    <button class="w-100 btn btn-lg btn-primary mt-2 col-12" type="submit">Sign up</button>
+    </div>
+    <small class="fs-6  fw-light border-top border-1">By clicking Sign up, you agree to the terms of use.</small>
     </form>
     </div>
-    </div>
-    </div>
+<!-- 상위단 row div -->
+</div>
+<!-- container div -->
+</div> 
+
+<hr />
+<a href="./index.html">>>Index</a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
