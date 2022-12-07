@@ -9,128 +9,211 @@
 integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 <!-- <link rel="stylesheet" href="./css/commons.css"> -->
 <!-- 참조화면
-http://127.0.0.1:5500/docs/bootstraps/pricing_examples.html
+
 https://getbootstrap.com/docs/4.0/examples/pricing/#
 view-source:https://getbootstrap.com/docs/4.0/examples/pricing/#
-http://127.0.0.1:5500/docs/bootstraps/index.html -->
+-->
 
 </head>
 <body>
 
     
-
-    <!-- https://getbootstrap.com/docs/4.0/examples/pricing/ -->
+        <div class="container">
+        <!-- https://getbootstrap.com/docs/4.0/examples/pricing/ -->
         <header class="d-flex justify-content-between">
         <!-- 왼쪽 아이콘 -->
         <!-- <a href="" class="d-flex align-items-center text-decoration-none">
         <i class="material-icons mt-2">star</i>Simple header</a> -->
         <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-                Pricing example
-            </a>           
-          </nav>
+            <h5 class="font-weight-normal">Company name</h5>
+        </nav>
         
         
         <!-- 오른쪽 메뉴바    -->
-        <div class="d-flex align-items-center">
+        
+        <div class="d-flex align-items-center ">
         <nav class="nav nav-pills d-flex ">
             <a href="" class="nav-link link-dark">Features</a>
             <a href="" class="nav-link link-dark">Enterprise</a>
             <a href="" class="nav-link link-dark">Support</a>
             <a href="" class="nav-link link-dark">Pricing</a>
         </nav>
-        </div>       
+        <button class="btn btn-outline-primary " type="submit">Sign up</button>
+        </div>
+          
         </header>
-        <hr>
+        </div>
+      <hr>
 
-        <div class="container"> 
+        
         
         <!-- 1번째 -->
-        <div class="col-12 col-md-6 text-center">
+        <div class="container text-center mt-4">   
+        <div class=" btn-block col-12 col-md-6 mx-auto text-center">
             <div class="fs-1">Pricing</div>
             <div class="fs-6">
                 Quickly build an effective pricing table for your potential customers with
                 this Bootstrap example. it's built with default Bootstrap components and utilities
                 with little customization.</div>
-        </div>
+            </div>
 
         <!-- 2번째 -->
-        <div class="row mb-4 box-shadow">        
-        <div class="card w-25 h-25 text-center">
-        <div class="card-header"><h4>Free</h4></div>
-        <div class="card-body">
+              
+        <div class="row">
+        <!-- <div class="card-deck">         -->
+        
+        <div class="col-4">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Free</h4>
+          </div>
+          <div class="card-body">
             <h1>$0<small class="text-secondary">/mo</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
                 <li>10 users included</li>
                 <li>2 GB of storage</li>
                 <li>Email support</li>
                 <li>Help center access</li>
-              </ul>          
-        
+            </ul>                    
+            <button class="btn btn-block btn-outline-primary mt-2">Sign up for free</button>
+          </div>
         </div>
-        <div class="card-footer pb-3">
-            <button class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
-        </div>
-         </div>
-
-        
-        <div class="card w-25 text-center">
-        <div class="card-header"><h4>Pro</h4></div>
-        <div class="card-body">
+      </div>
+         <!-- 아오 빡치네!! -->
+      <div class="col-4">
+        <div class="card"> 
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal ">Pro</h4>
+            </div>
+          <div class="card-body">
             <h1>$15<small class="text-secondary">/mo</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
                 <li>20 users included</li>
                 <li>10 GB of storage</li>
                 <li>Priority email support</li>
                 <li>Help center access</li>
-              </ul>   
-        </div>       
-        <div class="card-footer pb-3">
-            <button class="btn btn-lg btn-primary">Get started</button>
-        </div>
+            </ul>   
+            <button class="btn btn-block btn-primary mt-2">Get started</button>
+           </div>
          </div>
-         
-       
-        <div class="card w-25 text-center">
-        <div class="card-header"><h4>Enterprise</h4></div>
-        <div class="card-body">
+         </div>
+         <!-- 아오 빡치네!! -->
+        <div class="col-4">
+         <div class="card"> 
+           <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Enterprise</h4>
+            </div>
+           <div class="card-body">
             <h1>$29<small class="text-secondary">/mo</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
                 <li>30 users included</li>
                 <li>15 GB of storage</li>
                 <li>Phone and email support</li>
                 <li>Help center access</li>
-              </ul>    
+            </ul>    
+            <button class="btn btn-block btn-primary mt-2">Contect us</button>
+            </div>           
+          </div>
+        </div>
         
         </div>
-        <div class="card-footer pb-3">
-            <button class="btn btn-lg btn-primary">Contect us</button>
         </div>
-         </div>
+         <!-- 아오 빡치네!!  여기에 테이블 넣기!! 작업중지-->
+
+         
+       
+        <!-- <div class="col-12 mt-5">
+          <div class="fs-3 mb-4 text-center">Compare plans</div>
+          
+          <table class="table mb-5">
+            <thead>
+              <tr>
+                  <th colspan=4  scope=></th>
+                  <th scope=>Free</th>
+                  <th scope=>Pro</th>
+                  <th scope=>Enterprise</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <th class="text-start" colspan=4 scope=>Public</th>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+            </tr>
+
+          </tbody>
+          </table>
 
         </div>
-        </div>
+       -->
 
 
 
-         <!-- <div class="card mb-4 box-shadow"> 
-            <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Pro</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="container">
+         <footer class="pt-4 my-md-5 pt-md-5 border-top">
+          <div class="row">
+            <div class="col-12 col-md">
+              <img class="mb-2" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+              <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
             </div>
-
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>20 users included</li>
-                <li>10 GB of storage</li>
-                <li>Priority email support</li>
-                <li>Help center access</li>
+            <div class="col-6 col-md">
+              <h5>Features</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Cool stuff</a></li>
+                <li><a class="text-muted" href="#">Random feature</a></li>
+                <li><a class="text-muted" href="#">Team feature</a></li>
+                <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                <li><a class="text-muted" href="#">Another one</a></li>
+                <li><a class="text-muted" href="#">Last time</a></li>
               </ul>
-              <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
             </div>
-          </div> -->
+            <div class="col-6 col-md ">
+              <h5>Resources</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Resource</a></li>
+                <li><a class="text-muted" href="#">Resource name</a></li>
+                <li><a class="text-muted" href="#">Another resource</a></li>
+                <li><a class="text-muted" href="#">Final resource</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5>About</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="text-" href="">Team</a></li>
+                <li><a class="text" href="">Locations</a></li>
+                <li><a class="text-muted" href="">Privacy</a></li>
+                <li><a class="text-muted" href="">Terms</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+      
+     
 
+
+        
 
 
 
