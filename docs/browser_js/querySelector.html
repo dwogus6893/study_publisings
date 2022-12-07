@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="selector">selector with id</h3>
+
+    <p id="title">DOM</p>
+    <button id="btn">Click Me</button>
+    <ul class="list">
+        <li class="item">Apple</li>
+        <li class="item">Azue</li>
+        <li class="item">Samsung</li>
+        <li class="item">IBM</li>
+  </ul>
+    <ul class="list">
+    <li class="item">Banana</li>
+    <li class="item">berry</li>
+    <li class="item">Melon</li>   
+  </ul>
+
+  <a id="google" href="https://www.google.com">Google</a>
+
+<script>
+//body 아래 모든형제 출력
+let bodyTags = document.querySelectorAll("body > *");
+console.log(`body내 모든 형제 출력:`);
+bodyTags.forEach((element) => {
+    console.log(element);
+});
+
+console.log(`IT회사종류`);
+let list = bodyTags[4].querySelectorAll(".list .item");
+list.forEach((element) => {
+    console.log(element);
+});
+
+console.log(`과일종류`);
+let items = bodyTage[5].querySelectorAll(".list .item");
+items.forEach((element) => {
+    console.log(element);
+});
+</script>
+</body>
+</html>
