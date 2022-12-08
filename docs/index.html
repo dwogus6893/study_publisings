@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
+    />
+    <title>이재현</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        .fakeimg {
+          height: 200px;
+          background: #aaa;
+        }
+        </style>
+    
     <!-- <link rel="stylesheet" href="./css/commons.css"> -->
      
   
 </head>
 <body>
-    <div class="container">
+    <div class="p-5 bg-dark text-white text-center">
+        <h1>My First portfolio  Page</h1>
+      </div>
+
+      <div class="container">
         <header class="d-flex justify-content-between">
         <!-- 왼쪽 아이콘 -->
         <!-- <a href="" class="d-flex align-items-center text-decoration-none">
@@ -20,33 +36,177 @@
         <nav class="navbar navbar-light bg-light">
             <a class="navbar-brand" href="#">
               <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-              자바기반 공공데이터 융합 개발자 양성과정D
-             
-             
-              
-              
-           
+              Portfolio By 2022.12.08      
             <a href="../index.html"></a> 
           </nav>
-        
+          
+         
+
+
         <!-- 중간메뉴바    -->
         <div class="d-flex align-items-center">
         <nav class="nav nav-pills d-flex ">
-            <a href="" class="nav-link link-dark">경력사항</a>
-            <a href="" class="nav-link link-dark">Skills</a>
-            <a href="" class="nav-link link-dark">Resume</a>
-            <a href="" class="nav-link link-dark">Project</a>
-            <a href="" class="nav-link link-dark">About me</a>
+            <a href="#modalTarget01" class="btn btn-block " data-bs-toggle="modal">경력 사항</a>
+            <div class="modal" id="modalTarget01">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">경력사항</div>
+                        <div class="modal-body">
+                           
+                            <p>●kh정보교육원 (7개월)<br>
+                                기간 : 2022.08.09 ~ 2023.03.08<br>
+                                교육 : Java기반 공공데이터 융합 개발자 양성과정 수료
+                            </p>
+
+                            <p>●인텔리빅스 (2년5개월)<br>
+                                기간 : 2020-02.23 ~ 2022.06.10<br>
+                                직위 : 대리<br>
+                                직무 : 인프라보안</p>
+                            
+                            <p>●대흥사 (1년)<br>
+                                기간 : 2018-06.10 ~ 2019.06.11<br>
+                                직위 : 사원<br>
+                                직무 : 3D캐드 개발</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+                    </div>
+                </div>     
+            </div>
+            <!-- 여기에 넣음 -->
+            
+            <a href="#modalTarget02" class="btn btn-block" data-bs-toggle="modal">자격증</a>
+            <div class="modal" id="modalTarget02">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">자격증</div>
+                        <div class="modal-body">
+                        정보처리기능사 - 취득일자 2015.06.12<br>
+                        1종보통운전면허 - 취득일자 2022.08.08<br>
+                        네트워크관리사2급 - 취득일자 2019.12.03<br>
+                        컴퓨터활용능력2급 - 취득일자 2020.01.24<br>
+                        리눅스마스터2급 - 취득일자 2020.01.03<br>
+                        정보처리기사 - 취득일자 2022.06.17<br>
+                        TOEIC - 715점 <br>                
+                        SQLD - 취득일자 (취득예정) <br>
+                        정보보안기사- 취득일자 (취득예정)<br>              
+                        </div>                      
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+                    </div>
+                </div>     
+            </div>
+
+
+
+            <a href="./htmls/cases/tables_resume.html" class="nav-link link-dark">Resume</a>
+            <a href="#" class="nav-link link-dark">Project</a>
+            <a href="#" class="nav-link link-dark">About me</a>
         </nav>
         </div>
-        <!-- 오른쪽 메뉴바 -->
+
+        <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <button class="btn btn-primary" type="button">Search</button>
+          </form>
+        <!-- 오른쪽 메뉴바
         <div class="align-items-center">
                 <button class="btn btn-outline-primary my-2 my-sm-2" type="submit">Login</button>
                 <button class="btn btn-primary my-2 my-sm-2" type="submit">Sign-up</button>   
-        </div>
+        </div> -->
         </header>
         </div>
         <hr>
+
+      <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+       -->
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-sm-3">
+            <h2>About Me</h2>
+            <div class="">
+                <img src="./이재현-사진.jpg"  width="150px" height alt="">
+            </div>
+            <p class="text-left p-3">이재현 </p>
+            <p>●XX대학교 정보보안학과 석사<br>
+                (논문:인공지능과 정보보안에 관한 연구)
+            </p>
+            <p>●XX대학교 정보통신학부 학사</p>
+            <h3 class="mt-4">Some Links</h3>
+            <p>Let's not put off today's work until tomorrow</p>
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item">
+                <a class="nav-link active " href="#">할말1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">할말2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">할말3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">할말4</a>
+              </li>
+            </ul>
+            <hr class="d-sm-none">
+          </div>
+          <div class="col-sm-8">
+            <h2>세미 프로젝트1</h2>
+            <h5>KH정보교육원, Nov 11, 2022</h5>
+            <div class="fakeimg">Fake Image
+                <img src="./views/AppCheck.png" width="320px" alt="">
+                
+            </div>
+            <p>기술 요약..</p>
+            <a href="./홀리몰리 PPT 2.pptx">ppt자료</a>
+            <p>반응형 웹디자인을 진행하였으며, Bootstrap을 이용한 ~~ ~~했음.</p>
+      
+            <h2 class="mt-5">세미 프로젝트2</h2>
+            <h5>KH정보교육원, Jan 1, 2022</h5>
+            <div class="fakeimg">Fake Image</div>
+            <p>기술 요약..</p>
+            <p>반응형 웹디자인을 진행하였으며, Bootstrap을 이용한 ~~ ~~했음.</p>
+
+            <h2 class="mt-5">파이널 프로젝트</h2>
+            <h5>KH정보교육원, Jan 1, 2022</h5>
+            <div class="fakeimg">Fake Image</div>
+            <p>기술 요약..</p>
+            <p>반응형 웹디자인을 진행하였으며, Bootstrap을 이용한 ~~ ~~했음.</p>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- 하단 footer 시작 -->
+      <footer class="container-fluid text-bg-dark text-center">
+        <div>CONTACT</div>
+        <div>010-8504-3860</div>
+        <div>읽어주셔서 감사합니다.</div>
+      <div class="mt-5 p-4 bg-dark text-white">
+      <div class="container mt-3 ">
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">지금껏 작성한 코드 보기</button>
+        <div id="demo" class="collapse">
+
+    
+        <hr>
+
 
         <h2>HTML</h2>
         <div class="row">
@@ -106,7 +266,7 @@
         <div class="row">
             <div class="col-auto">
             <div class="dropdown">
-                <a class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">CSS 22.11.04</a>
+                <a class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">CSS 22.11.04</a>
                 <ul class="dropdown-menu">
                     <a href="./CSSs/threewayusingcss.html" class="dropdown-item">CSS 사용 3가지 방법</a>
                     <a href="./CSSs/externalref.html" class="dropdown-item">externalref.html</a>
@@ -118,7 +278,7 @@
             
             <div class="col-auto">
             <div class="dropdown">
-                <a class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">CSS 22.11.07</a>
+                <a class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">CSS 22.11.07</a>
                 <ul class="dropdown-menu">
                     <a href="./CSSs/boxmodels.html" class="dropdown-item">boxmodels.html</a>
                     <a href="./CSSs/border-color.html" class="dropdown-item">border-color.html</a>
@@ -130,7 +290,7 @@
     
             <div class="col-auto">
                 <div class="dropdown">
-                    <a class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">CSS 22.11.08</a>
+                    <a class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">CSS 22.11.08</a>
                     <ul class="dropdown-menu">
                         <a href="./CSSs/beginner_html.html" class="dropdown-item">beginner_html 강사님 문제풀이</a>
                         <a href="./CSSs/displays.html" class="dropdown-item">displays</a>
@@ -144,7 +304,7 @@
                 </div>    
                 <div class="col-auto">
                     <div class="dropdown">
-                        <a class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">CSS 22.11.09</a>
+                        <a class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">CSS 22.11.09</a>
                         <ul class="dropdown-menu">
                             <a href="./CSSs/ui_design_form.html" class="dropdown-item">미니프로젝트(개인)</a>
                             
@@ -154,7 +314,7 @@
 
                     <div class="col-auto">
                         <div class="dropdown">
-                            <a class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">CSS 22.11.10</a>
+                            <a class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">CSS 22.11.10</a>
                             <ul class="dropdown-menu">
                                 <a href="./CSSs/moly_main.html"  class="dropdown-item">미니프로젝트(2인팀)</a>
                                 
@@ -170,7 +330,7 @@
         <div class="row">
             <div class="col-auto">
             <div class="dropdown">
-                <a class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">CSS 22.11.04</a>
+                <a class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">browser 22.11.04</a>
                 <ul class="dropdown-menu">
                     <a href="./CSSs/threewayusingcss.html" class="dropdown-item">CSS 사용 3가지 방법</a>
                     <a href="./CSSs/externalref.html" class="dropdown-item">externalref.html</a>
@@ -182,7 +342,7 @@
             
             <div class="col-auto">
             <div class="dropdown">
-                <a class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">CSS 22.11.07</a>
+                <a class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">browser 22.11.07</a>
                 <ul class="dropdown-menu">
                     <a href="./CSSs/boxmodels.html" class="dropdown-item">boxmodels.html</a>
                     <a href="./CSSs/border-color.html" class="dropdown-item">border-color.html</a>
@@ -194,7 +354,7 @@
     
             <div class="col-auto">
                 <div class="dropdown">
-                    <a class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">CSS 22.11.08</a>
+                    <a class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">browser 22.11.08</a>
                     <ul class="dropdown-menu">
                         <a href="./CSSs/beginner_html.html" class="dropdown-item">beginner_html 강사님 문제풀이</a>
                         <a href="./CSSs/displays.html" class="dropdown-item">displays</a>
@@ -208,7 +368,7 @@
                 </div>    
                 <div class="col-auto">
                     <div class="dropdown">
-                        <a class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">CSS 22.11.09</a>
+                        <a class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">browser 22.11.09</a>
                         <ul class="dropdown-menu">
                             <a href="./CSSs/ui_design_form.html" class="dropdown-item">미니프로젝트(개인)</a>
                             
@@ -218,7 +378,7 @@
 
                     <div class="col-auto">
                         <div class="dropdown">
-                            <a class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">CSS 22.11.10</a>
+                            <a class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">browser 22.11.10</a>
                             <ul class="dropdown-menu">
                                 <a href="./CSSs/moly_main.html"  class="dropdown-item">미니프로젝트(2인팀)</a>
                                 
@@ -233,7 +393,7 @@
         <div class="row">
             <div class="col-auto">
             <div class="dropdown">
-                <a class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">CSS 22.11.04</a>
+                <a class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">vanilla 22.11.04</a>
                 <ul class="dropdown-menu">
                     <a href="./CSSs/threewayusingcss.html" class="dropdown-item">CSS 사용 3가지 방법</a>
                     <a href="./CSSs/externalref.html" class="dropdown-item">externalref.html</a>
@@ -245,7 +405,7 @@
             
             <div class="col-auto">
             <div class="dropdown">
-                <a class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">CSS 22.11.07</a>
+                <a class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">vanilla 22.11.07</a>
                 <ul class="dropdown-menu">
                     <a href="./CSSs/boxmodels.html" class="dropdown-item">boxmodels.html</a>
                     <a href="./CSSs/border-color.html" class="dropdown-item">border-color.html</a>
@@ -257,7 +417,7 @@
     
             <div class="col-auto">
                 <div class="dropdown">
-                    <a class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">CSS 22.11.08</a>
+                    <a class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">vanilla 22.11.08</a>
                     <ul class="dropdown-menu">
                         <a href="./CSSs/beginner_html.html" class="dropdown-item">beginner_html 강사님 문제풀이</a>
                         <a href="./CSSs/displays.html" class="dropdown-item">displays</a>
@@ -271,7 +431,7 @@
                 </div>    
                 <div class="col-auto">
                     <div class="dropdown">
-                        <a class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">CSS 22.11.09</a>
+                        <a class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">vanilla 22.11.09</a>
                         <ul class="dropdown-menu">
                             <a href="./CSSs/ui_design_form.html" class="dropdown-item">미니프로젝트(개인)</a>
                             
@@ -281,7 +441,7 @@
 
                     <div class="col-auto">
                         <div class="dropdown">
-                            <a class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">CSS 22.11.10</a>
+                            <a class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">vanilla 22.11.10</a>
                             <ul class="dropdown-menu">
                                 <a href="./CSSs/moly_main.html"  class="dropdown-item">미니프로젝트(2인팀)</a>
                                 
@@ -377,7 +537,7 @@
             <hr>
 
 
-            <h2>HTML 인강</h2>
+            <h2>인강</h2>
         <div class="row">
             <div class="col-auto">
             <div class="dropdown">
@@ -403,40 +563,38 @@
         <div class="row">
             <div class="col-auto">
             <div class="dropdown">
-                <a class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">웹 프로젝트</a>
+                <a class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">웹 프로젝트1(html,css)</a>
                 <ul class="dropdown-menu">
-                    <a href="./CSSs/moly_main.html" class="dropdown-item">세미프로젝트1</a>
-                    <a href="./views/글자관련태그.html" class="dropdown-item">세미프로젝트2</a>
-                    <a href="./views/글자관련태그.html" class="dropdown-item">세미프로젝트3</a>
+                    <a href="./project/project.html" class="dropdown-item">세미프로젝트1</a>
+                    <a href="./project/project.html" class="dropdown-item">세미프로젝트2</a>
+                  
                     
                    
                  </ul>
             </div>
-            </div>         
+            </div>
+            
+            <div class="col-auto">
+                <div class="dropdown">
+                    <a class="btn btn-danger  dropdown-toggle" data-bs-toggle="dropdown">웹 프로젝트2(BootStrap)</a>
+                    <ul class="dropdown-menu">
+                        <a href="./bootstraps/pricing_examples.html" class="dropdown-item">pricing_examples.html</a>
+                        <a href="./bootstraps/navbars.html" class="dropdown-item">navbars.html</a>
+                        <a href="./bootstraps/navbar_fiexd.html" class="dropdown-item">navbar_fiexd.html</a>
+                        <a href="./bootstraps/navbars 수정.html" class="dropdown-item">navbars 수정.html</a>
+                        
+                     </ul>
+                </div>
+                </div>
             </div>
              <hr>
+</div>
+</div>
+</div>
+</footer>
 
 
 
-
-
-
-
-
-
-
-    <!-- <h3>Total_index</h3>
-    <ul>
-        <li>
-            <a href="./htmls/index.html">htmls</a>
-        </li>
-        <li>
-            <a href="./CSSs/index.html">CSSs</a>
-        </li>
-        <li>
-            <a href="./bootstraps/index.html">BootStraps</a>
-        </li>
-    </ul> -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 

@@ -7,70 +7,117 @@
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="../html/images/몰리헬스 로고.png"
-    />
+      href="../html/images/몰리헬스 로고.png"/>
     <title>몰리 Moly GYM</title>
 
-    <link rel="stylesheet" href="../css/fix_menu.css" />
-    <link rel="stylesheet" href="../css/login.css" />
-    <link rel="stylesheet" href="../css/menubar.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./css/commons.css">
   </head>
+  
+  
   <body>
-    <nav>
-      <ul class="menu">
-        <li>
-          <a href="../html/index.html"
-            ><img src="../html/images/배경.png " width="200px" height="40px"
-          /></a>
-        </li>
-        <li>
-          <a href="../html/login.html">로그인</a>
-        </li>
 
-        <li>
-          <a href="../html/moly_rule.html">회원가입</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="box-border text-center box-color">몰리짐</div>
-    <div class="box-border">
-      <div class="text-center box-color" id="under-border">로그인</div>
-
-      <form
-        class="text-center"
-        action="../html/login.html"
-        method="get"
-        id="form-id"
+    <header class="container-fluid">
+      <nav
+        class="navbar navbar-expand-sm bg-light fixed-top d-flex justify-content-between"
       >
         <div>
-          <div>
-            <label for="">아이디&nbsp;&nbsp;&nbsp;&nbsp;</label
-            ><input type="text" name="name" />
-          </div>
-          <div>
-            <label for="">비밀번호&nbsp;</label
-            ><input type="text" name="password" />
-          </div>
+          <a href="../bootstraps/index.html" class="navbar-brand">
+            <img src="./images/배경.png" alt="" width="100" />
+          </a>
         </div>
-
         <div>
-          <button type="submit">
-            <a
-              href="../html/index_login.html"
-              target="_self"
-              style="text-decoration: none; color: black" onclick="alert('로그인 되었습니다.')">
-              로그인</a>
-              
-          </button>
+          <a href="#collapseId" class="navbar-toggler" data-bs-toggle="collapse"
+            ><span class="navbar-toggler-icon"></span
+          ></a>
         </div>
-      </form>
-    </div>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="collapseId"
+        >
+          <div class="navbar-nav">
+            <a href="" class="nav-link pe-3">로그인</a>
+            <a href="./moly_rule.html" class="nav-link pe-3">회원가입</a>
 
-    <!-- 고정 footer 부분-->
-    <footer class="footer-color">
+            <form class="d-flex" role="serach">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+       <!-- 요기는 바디바디바디 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+          <div class="text-center">
+          <h2><span class="col-8 col-md-6 badge bg-secondary">몰리짐에 오신걸 환영합니다.</span></h2>
+          </div>
+          <hr>
+         
+          <div class="container col-12">
+            <div class="col-12 col-md-12 text-center ">
+            <h2><span class="col-6 badge bg-secondary">몰리짐 로그인</span></h2>
+            </div>
+            <div class="container col-6">
+              <div class="text-center">
+                  <div class="col-12 col-md-12">
+                    <!-- form 묶음 -->
+                    <form action="./index.html" method="get">
+                      <!-- 1차묶음 -->
+                    <div class="mb-1 bg-secondary bg-opacity-10 row mt-4">
+                      
+                      <!-- 이메일 입력 -->
+                        <div class="mt-4">
+                          <label for="uname" class="form-label ">아이디 </label>
+                          <input type="email" class="form-control mb-2" name="email_id" id="" value="" placeholder="Email address">
+                          <!-- 비밀번호 입력 -->
+                          <div class="mt-4">
+                          <label for="uname" class="form-label ">비밀번호 </label>
+                          <input type="password" class="form-control mb-2" name="password_id" id="" value="" placeholder="Password">
+                          <!-- Remember me 버튼 -->
+                          </div>
+                        </div>
+                        
+                      <!-- sign up버튼-->
+                      <div class="col-12 md-12 mb-2">
+                      <button class="w-100 btn btn-sm btn-secondary mt-2 col-6" type="submit">로그인</button>
+                      </div>
+                    </div>
+                    </form>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- 바디끝@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+     
+    
+    <footer class="container-fluid text-bg-dark text-center">
       <div>CONTACT</div>
       <div>010-5041-3846</div>
-      <div>주소 : 오늘도 힘들군 밤되면 쓰러지리</div>
+      <div>주소:오늘도 힘들군 밤되면 쓰러지리</div>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+    crossorigin="anonymous"></script>
   </body>
 </html>
