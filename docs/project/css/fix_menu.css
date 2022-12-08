@@ -1,0 +1,44 @@
+nav {
+  border: 2px solid;
+}
+
+.footer-color {
+  background-color: black;
+  border: solid 1px black;
+  color: white;
+  text-align: center;
+  font-size: large;
+  font-weight: bolder;
+  margin-top: 100px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+  color: black;
+  background-color: rgb(239, 239, 239);
+  border: 1px solid black;
+}
+li > a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.menu {
+  width: 900px;
+  overflow: hidden;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.menu > li {
+  width: 200px; /*20*5=100%*/
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  background-color: rgb(239, 239, 239);
+}

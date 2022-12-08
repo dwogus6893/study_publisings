@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../html/images/몰리헬스 로고.png"
+    />
+    <title>몰리 Moly GYM</title>
+    <link href="../css/Moly_rule.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/fix_menu.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li>
+          <a href="../html/index.html"
+            ><img src="../html/images/배경.png " width="200px" height="40px"
+          /></a>
+        </li>
+        <li>
+          <a href="../html/login.html">로그인</a>
+        </li>
+
+        <li>
+          <a href="../html/moly_rule.html">회원가입</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="box-border text-center box-color">몰리짐</div>
+    <form action="../html/index.html" method="get">
+      <table>
+        <tr>
+          <th>
+            <label for="user">아이디</label>
+          </th>
+          <td>
+            <input type="text" name="user" id="user_id" />
+            <input type="button" value="아이디 중복확인" />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="pass">비밀번호</label>
+          </th>
+          <td>
+            <input type="text" name="pass" id="pass_id" />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="passcon">비밀번호 확인</label>
+          </th>
+          <td>
+            <input type="text" name="passcon" id="passcon_id" />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="tell">연락처</label>
+          </th>
+          <td>
+            <select name="number1" id="number1_id">
+              <option value="null">선택</option>
+              <option value="n010">010</option>
+              <option value="n011">011</option>
+              <option value="n016">016</option>
+              <option value="n019">019</option></select
+            >-
+            <input
+              type="text"
+              name="number2"
+              id="number2_id"
+              style="width: 50px"
+            />
+            -
+            <input
+              type="text"
+              name="number3"
+              id="number3_id"
+              style="width: 50px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="post">우편번호</label>
+          </th>
+          <td>
+            <input type="text" name="post" id="post_id" />
+            <input type="button" value="주소검색" />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="add">주소</label>
+          </th>
+          <td>
+            <div>
+              <input
+                type="text"
+                name="add1"
+                id="add1_id"
+                style="width: 600px"
+              />
+            </div>
+          </td>
+        </tr>
+      </table>
+     
+        <div style="text-align: right; margin-top: 10px">
+        <button type="submit" style="padding: 5px" onclick="alert('가입 되었습니다.')">
+           회원가입</button>
+          
+           </div>
+    </form>
+
+    <!-- 2022년11월13일 추가 -->
+    
+    <!-- 고정 footer 부분-->
+    <footer class="footer-color">
+      <div>CONTACT</div>
+      <div>010-5041-3846</div>
+      <div>주소 : 오늘도 힘들군 밤되면 쓰러지리</div>
+    </footer>
+  </body>
+</html>

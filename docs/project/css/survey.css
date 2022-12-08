@@ -1,0 +1,53 @@
+.back-color {
+  background-color: rgb(243, 243, 243);
+}
+
+table {
+  border-spacing: 0px;
+}
+table th,
+table td {
+  margin: 0px;
+  padding: 5px 15px 5px 15px;
+  border: 1px solid black;
+}
+
+select {
+  margin: 10px;
+  padding: 5px;
+}
+
+.go-center {
+  margin: 10px auto;
+}
+form > .go-center {
+  margin: 0px auto;
+}
+
+form > div {
+  border: 1px solid;
+  padding: 10px;
+  width: 800px;
+}
+
+form label {
+  margin-left: 400px;
+}
+
+.survey_finish {
+  text-align: center;
+  border: 1px solid;
+  font-size: 50px;
+  width: 800px;
+  height: 300px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+div > div > button {
+  font-size: 30px;
+}
+button > a {
+  text-decoration: none;
+  color: black;
+}

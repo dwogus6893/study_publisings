@@ -1,0 +1,20 @@
+form > div {
+  padding: 10px;
+}
+
+.box-color {
+  background-color: rgb(243, 243, 243);
+}
+
+.box-border {
+  border: 1px solid black;
+  margin: 20px 200px 20px 200px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#under-border {
+  border-bottom: solid 1px black;
+}
