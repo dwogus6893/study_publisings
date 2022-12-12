@@ -7,28 +7,139 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
 integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
 <link rel="stylesheet" href="./css/commons.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 <body>
 
-<div class="container">
-<div class="fs-3">Collapses</div>
-<div>
-    <a class="btn btn-primary" href="#collapseTarget" data-bs-toggle="collapse">link with href</a>
-    <button class="btn btn-primary" data-bs-target="#collapseTarget">link with</button>
-</div>
-
-<div class="collapse" id="collapseTarget">
-    <div class="card card-body">
-        모로코, 승부차기로 스페인 꺽고 첫 8강..
+    <div class="fs-3">Carousels with controls</div>
+    <div class="container">
+        <div id="carouselConntrolId" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="https://www.w3schools.com/bootstrap5/la.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="https://www.w3schools.com/bootstrap5/chicago.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="https://www.w3schools.com/bootstrap5/ny.jpg" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#carouselConntrolId" data-bs-slide="prev">prev
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            
+            <button class="carousel-control-next" data-bs-target="#carouselConntrolId" data-bs-slide="next">next
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
     </div>
-</div>
-<hr>
-</div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+
+    <div class="fs-3">Carousels captions</div>
+    <div class="container">
+        <div class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="500">
+                    <img class="w-100" src="https://www.w3schools.com/bootstrap5/la.jpg" alt="">
+                <div class="carousel-caption">
+                    <div class="h1">First Slide Label</div>
+                    <div >Description</div>
+                </div>
+                </div>
+                <!-- intervel은 시간을 주는거 -->
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img class="w-100" src="https://www.w3schools.com/bootstrap5/chicago.jpg" alt="">
+                </div>
+                <div class="carousel-item" data-bs-interval="500">
+                    <img class="w-100" src="https://www.w3schools.com/bootstrap5/ny.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="fs-3">Carousels with Indicators</div>
+    <div class="container">
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <!-- carousel-indicators -->
+            <div class="carousel-indicators">
+                <button data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></button>
+                <button data-bs-target="#carouselId" data-bs-slide-to="1"></button>
+                <button data-bs-target="#carouselId" data-bs-slide-to="2"></button>
+            </div>
+            <!-- carousel-inner -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="https://www.w3schools.com/bootstrap5/la.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="https://www.w3schools.com/bootstrap5/chicago.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="https://www.w3schools.com/bootstrap5/ny.jpg" alt="">
+                </div>
+            </div>
+          
+        </div>
+    </div>
+
+
+    <br>
+
+    <div class="fs-3">Carousels with grids</div>
+    <div class="row">
+        <div class="col-6">
+            <div>Contents</div>
+        </div>
+        <div class="col-6">
+            <div class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-50" src="../views/chicago_copy.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="https://www.w3schools.com/bootstrap5/la.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="https://www.w3schools.com/bootstrap5/chicago.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="https://www.w3schools.com/bootstrap5/ny.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="fs-3">Carousels basic</div>
+    <div class="container">
+        <div class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="https://www.w3schools.com/bootstrap5/la.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="https://www.w3schools.com/bootstrap5/chicago.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="https://www.w3schools.com/bootstrap5/ny.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
-crossorigin="anonymous"></script>    
+crossorigin="anonymous"></script>     -->
+<script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
