@@ -1,5 +1,5 @@
 ## study Publisings
-- [html](./docs/htmls/index.html)
+- [포트폴리오](./docs/index.html)
 - Css
 - bootStrap
 
